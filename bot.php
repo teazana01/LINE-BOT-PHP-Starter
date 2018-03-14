@@ -25,12 +25,12 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย จริงๆนะโว้ย มึงต้องสอนกูอีกเยอะเลย";
+  $arrPostData['messages'][0]['text'] = "ฉันสามารถควบคุมระบบไฟฟ้าภายในบ้านได้";
  }else if($arrJson['events'][0]['message']['text'] == "สมาชิกกลุ่มมีใครบ้าง"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "3คน รวมพลคนมหัศจรรย์ เจคคุคุ ควย!!!";
+  $arrPostData['messages'][0]['text'] = "มี 3 คน รวมพลคนมหัศจรรย์ ";
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
